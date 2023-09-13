@@ -2,8 +2,8 @@ pipeline {
     agent any
     tools {nodejs "node"}
     environment {
-        imageName = tylerwong14/fullstack.
-        dockerCredentialsName='tylerwong14'
+        imageName = tylerwong14/fullstack
+        dockerCredentialsName = 'dockerhub-creds'
         dockerImage = ''
     }
 
