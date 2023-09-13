@@ -23,7 +23,9 @@ pipeline {
         }
         stage('Test') {
             steps {
+                dir('simple-app') {
                 sh 'npm test'
+                }
             }
         }
         stage('Building image') {
