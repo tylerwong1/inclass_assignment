@@ -16,7 +16,9 @@ pipeline {
         }
         stage('Install dependencies') {
             steps {
-                sh 'npm install'
+                dir('simple-app') {
+                    sh 'npm install'
+                }
             }
         }
         stage('Test') {
